@@ -19,3 +19,17 @@ genfscon sysfs /kernel/wcd_cpe0 u:object_r:sysfs_audio:s0
 genfscon sysfs /devices/virtual/thermal u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/virtual/kgsl/kgsl/proc u:object_r:sysfs_kgsl_proc:s0
 genfscon debugfs /kgsl/proc     u:object_r:kgsl_debugfs:s0
+genfscon proc  /sys/kernel/sched_boost                  u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_upmigrate              u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_downmigrate            u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_grp_upmigrate          u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_grp_downmigrate        u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_window_stats_policy    u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_enable_thread_grouping u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_freq_inc_notify        u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_freq_dec_notify        u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_ravg_hist_size         u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_init_task_load         u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_spill_nr_run           u:object_r:proc_kernel_sched:s0
+genfscon proc  /sys/kernel/sched_small_task             u:object_r:proc_kernel_sched:s0
+
