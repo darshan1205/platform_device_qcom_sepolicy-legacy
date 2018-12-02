@@ -21,6 +21,7 @@ hal_client_domain(platform_app, hal_hbtp)
 
 #get_prop(platform_app, bluetooth_prop)
 get_prop(platform_app, debug_gralloc_prop)
+get_prop(platform_app, qemu_hw_mainkeys_prop)
 
 #for perf-hal call
 hal_client_domain(platform_app, hal_perf)
